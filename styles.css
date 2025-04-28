@@ -1,0 +1,275 @@
+/* General styles */
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('./assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+/* Navbar Styles */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    padding: 1rem 0;
+}
+
+.navbar-contents {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    gap: 20px;
+}
+
+.navbar-contents a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-contents a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Hero Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Service Section */
+#services {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.service-box {
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    background: #f8f9fa;
+    transform: translateY(-10px);
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #00a859;
+    margin-bottom: 1rem;
+}
+
+.service-box h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Skills Section */
+/* .skills {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.upper-container, .lower-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skills-upper-image img, .skills-lower-image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+} */
+
+/* Skills Progress */
+/* .skills-progress {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+} */
+
+/* Contact Section */
+.contacts-container {
+    padding: 3rem 0;
+    background-color: #00a859;
+    text-align: center;
+}
+
+.contacts-container h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contacts-container p {
+    color: white;
+    font-size: 1rem;
+}
+
+.contacts-container .btn {
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #00a859;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contacts-container .btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background-color: teal;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .footer-logo img {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    z-index: 99;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #00a859;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#btn-back-to-top:hover {
+    background-color: #333;
+}
+
+
+.skills {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.upper-container,
+.lower-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* spacing between image and text/progress */
+}
+
+.skills-upper-image img,
+.skills-lower-image img {
+    width: 350px; /* Same width */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Different heights */
+.skills-upper-image img {
+    height: 180px;
+}
+
+.skills-lower-image img {
+    height: 280px;
+}
+
+/* Make heading-container and skills-progress same width */
+.heading-container,
+.skills-progress {
+    flex: 1; /* Take equal space */
+    max-width: 500px; /* or whatever fits your design nicely */
+}
+
+.heading-container {
+    text-align: left;
+}
+
+.skills-progress .container {
+    width: 100%;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
